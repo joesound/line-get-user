@@ -118,104 +118,104 @@ def callback2():
     return 'OK', 200
 
 # Webhook to handle incoming messages from LINE
-@app.route("/callback3", methods=['POST'])
-def callback3():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
+# @app.route("/callback3", methods=['POST'])
+# def callback3():
+#     signature = request.headers['X-Line-Signature']
+#     body = request.get_data(as_text=True)
 
-    try:
-        handler3.handle(body, signature)
-    except Exception as e:
-        print(f"Error: {e}")
-        return 'Error', 400
+#     try:
+#         handler3.handle(body, signature)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return 'Error', 400
 
-    return 'OK', 200
+#     return 'OK', 200
 
-# Webhook to handle incoming messages from LINE
-@app.route("/callback4", methods=['POST'])
-def callback4():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
+# # Webhook to handle incoming messages from LINE
+# @app.route("/callback4", methods=['POST'])
+# def callback4():
+#     signature = request.headers['X-Line-Signature']
+#     body = request.get_data(as_text=True)
 
-    try:
-        handler4.handle(body, signature)
-    except Exception as e:
-        print(f"Error: {e}")
-        return 'Error', 400
+#     try:
+#         handler4.handle(body, signature)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return 'Error', 400
 
-    return 'OK', 200
+#     return 'OK', 200
 
-# Webhook to handle incoming messages from LINE
-@app.route("/callback5", methods=['POST'])
-def callback5():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
+# # Webhook to handle incoming messages from LINE
+# @app.route("/callback5", methods=['POST'])
+# def callback5():
+#     signature = request.headers['X-Line-Signature']
+#     body = request.get_data(as_text=True)
 
-    try:
-        handler5.handle(body, signature)
-    except Exception as e:
-        print(f"Error: {e}")
-        return 'Error', 400
+#     try:
+#         handler5.handle(body, signature)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return 'Error', 400
 
-    return 'OK', 200
+#     return 'OK', 200
 
-# Webhook to handle incoming messages from LINE
-@app.route("/callback6", methods=['POST'])
-def callback6():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
+# # Webhook to handle incoming messages from LINE
+# @app.route("/callback6", methods=['POST'])
+# def callback6():
+#     signature = request.headers['X-Line-Signature']
+#     body = request.get_data(as_text=True)
 
-    try:
-        handler6.handle(body, signature)
-    except Exception as e:
-        print(f"Error: {e}")
-        return 'Error', 400
+#     try:
+#         handler6.handle(body, signature)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return 'Error', 400
 
-    return 'OK', 200
+#     return 'OK', 200
 
-# Webhook to handle incoming messages from LINE
-@app.route("/callback7", methods=['POST'])
-def callback7():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
+# # Webhook to handle incoming messages from LINE
+# @app.route("/callback7", methods=['POST'])
+# def callback7():
+#     signature = request.headers['X-Line-Signature']
+#     body = request.get_data(as_text=True)
 
-    try:
-        handler7.handle(body, signature)
-    except Exception as e:
-        print(f"Error: {e}")
-        return 'Error', 400
+#     try:
+#         handler7.handle(body, signature)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return 'Error', 400
 
-    return 'OK', 200
-
-
-# Webhook to handle incoming messages from LINE
-@app.route("/callback8", methods=['POST'])
-def callback8():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
-
-    try:
-        handler8.handle(body, signature)
-    except Exception as e:
-        print(f"Error: {e}")
-        return 'Error', 400
-
-    return 'OK', 200
+#     return 'OK', 200
 
 
-# Webhook to handle incoming messages from LINE
-@app.route("/callback9", methods=['POST'])
-def callback9():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
+# # Webhook to handle incoming messages from LINE
+# @app.route("/callback8", methods=['POST'])
+# def callback8():
+#     signature = request.headers['X-Line-Signature']
+#     body = request.get_data(as_text=True)
 
-    try:
-        handler9.handle(body, signature)
-    except Exception as e:
-        print(f"Error: {e}")
-        return 'Error', 400
+#     try:
+#         handler8.handle(body, signature)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return 'Error', 400
 
-    return 'OK', 200
+#     return 'OK', 200
+
+
+# # Webhook to handle incoming messages from LINE
+# @app.route("/callback9", methods=['POST'])
+# def callback9():
+#     signature = request.headers['X-Line-Signature']
+#     body = request.get_data(as_text=True)
+
+#     try:
+#         handler9.handle(body, signature)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return 'Error', 400
+
+#     return 'OK', 200
 
 
 
