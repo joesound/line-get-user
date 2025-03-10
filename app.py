@@ -10,12 +10,12 @@ import requests, json
 app = Flask(__name__)
 
 # Your Channel Access Token and Channel Secret
-CHANNEL_ACCESS_TOKEN1 = os.environ['CHANNEL_ACCESS_TOKEN1']
-CHANNEL_SECRET1 = os.environ['CHANNEL_SECRET1']
+CHANNEL_ACCESS_TOKEN10 = os.environ['CHANNEL_ACCESS_TOKEN10']
+CHANNEL_SECRET10 = os.environ['CHANNEL_SECRET10']
 
 # Your Channel Access Token and Channel Secret
-CHANNEL_ACCESS_TOKEN2 = os.environ['CHANNEL_ACCESS_TOKEN2']
-CHANNEL_SECRET2 = os.environ['CHANNEL_SECRET2']
+CHANNEL_ACCESS_TOKEN11 = os.environ['CHANNEL_ACCESS_TOKEN11']
+CHANNEL_SECRET11 = os.environ['CHANNEL_SECRET11']
 
 # Your Channel Access Token and Channel Secret
 CHANNEL_ACCESS_TOKEN3 = os.environ['CHANNEL_ACCESS_TOKEN3']
@@ -48,12 +48,12 @@ CHANNEL_SECRET9 = os.environ['CHANNEL_SECRET9']
 
 
 # Set up the LineBotApi and WebhookHandler
-line_bot_api1 = LineBotApi(CHANNEL_ACCESS_TOKEN1)
-handler1 = WebhookHandler(CHANNEL_SECRET1)
+line_bot_api1 = LineBotApi(CHANNEL_ACCESS_TOKEN10)
+handler1 = WebhookHandler(CHANNEL_SECRET10)
 
 # Set up the LineBotApi and WebhookHandler
-line_bot_api2 = LineBotApi(CHANNEL_ACCESS_TOKEN2)
-handler2 = WebhookHandler(CHANNEL_SECRET2)
+line_bot_api2 = LineBotApi(CHANNEL_ACCESS_TOKEN11)
+handler2 = WebhookHandler(CHANNEL_SECRET11)
 
 # Set up the LineBotApi and WebhookHandler
 line_bot_api3 = LineBotApi(CHANNEL_ACCESS_TOKEN3)
@@ -81,17 +81,14 @@ line_bot_api8 = LineBotApi(CHANNEL_ACCESS_TOKEN8)
 handler8 = WebhookHandler(CHANNEL_SECRET8)
 
 # Set up the LineBotApi and WebhookHandler
-line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN9)
-handler = WebhookHandler(CHANNEL_SECRET)
-
-# Set up the LineBotApi and WebhookHandler
-line_bot_api9 = LineBotApi(CHANNEL_ACCESS_TOKEN)
+line_bot_api9 = LineBotApi(CHANNEL_ACCESS_TOKEN9)
 handler9 = WebhookHandler(CHANNEL_SECRET9)
 
 
+
 # Webhook to handle incoming messages from LINE
-@app.route("/callback1", methods=['POST'])
-def callback1():
+@app.route("/callback10", methods=['POST'])
+def callback10():
     signature = request.headers['X-Line-Signature']
     body = request.get_data(as_text=True)
 
@@ -104,8 +101,8 @@ def callback1():
     return 'OK', 200
 
 # Webhook to handle incoming messages from LINE
-@app.route("/callback2", methods=['POST'])
-def callback2():
+@app.route("/callback11", methods=['POST'])
+def callback11():
     signature = request.headers['X-Line-Signature']
     body = request.get_data(as_text=True)
 
