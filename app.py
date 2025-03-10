@@ -114,7 +114,7 @@ def callback11():
 
     return 'OK', 200
 
-Webhook to handle incoming messages from LINE
+#Webhook to handle incoming messages from LINE
 @app.route("/callback3", methods=['POST'])
 def callback3():
     signature = request.headers['X-Line-Signature']
