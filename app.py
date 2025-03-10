@@ -222,8 +222,8 @@ def callback2():
 
 
 # Event handler for receiving messages
-@handler.add(MessageEvent, message=TextMessage)
-def handle_message(event):
+@handler1.add(MessageEvent, message=TextMessage)
+def handle_message1(event):
     # Extract the user ID (UUID) from the event
     user_id = event.source.user_id  # This is the user ID for the person interacting with the bot
     
@@ -237,8 +237,8 @@ def handle_message(event):
     )
 
 # Event handler for receiving messages
-@handler.add(MessageEvent, message=TextMessage)
-def handle_message(event):
+@handler2.add(MessageEvent, message=TextMessage)
+def handle_message2(event):
     # Extract the user ID (UUID) from the event
     user_id = event.source.user_id  # This is the user ID for the person interacting with the bot
     
