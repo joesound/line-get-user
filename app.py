@@ -309,7 +309,7 @@ def handle_message6(event):
     )
 
 # Event handler for receiving messages
-@handle7.add(MessageEvent, message=TextMessage)
+@handler7.add(MessageEvent, message=TextMessage)
 def handle_message7(event):
     # Extract the user ID (UUID) from the event
     user_id = event.source.user_id  # This is the user ID for the person interacting with the bot
